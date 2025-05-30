@@ -1,12 +1,10 @@
-const SocialLink = ({ href, icon }) => {
+const SocialLink = ({ itemClass, href, icon }) => {
   return (
-    <>
-      <li>
-        <a rel='noreferrer' href={href} target='_blank' className='nav-icon'>
-          <i className={icon}></i>
-        </a>
-      </li>
-    </>
+    <li>
+      <a href={href} target='_blank' rel='noreferrer' className={itemClass}>
+        <i className={icon}></i>
+      </a>
+    </li>
   );
 };
 export default SocialLink;
